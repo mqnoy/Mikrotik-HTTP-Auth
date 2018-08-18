@@ -1,0 +1,9 @@
+<?php
+$raw = file_get_contents('php://input');
+
+$myfile = fopen("output.json", "a") or die("Unable to open file!");
+
+$putext =$raw;
+fwrite($myfile, $putext.PHP_EOL);
+fclose($myfile);
+?>
