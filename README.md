@@ -5,3 +5,7 @@
 [1]import mutiple cert  into mikrotik 
 <br/>
 [2]sending variabel json mikrotik with tool fetch http post
+
+# Folder script 
+[1] file.php 
+
