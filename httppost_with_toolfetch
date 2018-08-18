@@ -1,0 +1,18 @@
+#--------------------------------                                                                     
+# - created 8-19-2018 2:24 AM
+#--------------------------------
+:local data "";
+:local url "http://localhost/folder/file.php";
+:local ipaddress [/ip address get value-name=address number=4];
+:local address [:pick $ipaddress 0 [:find $ipaddress "/"]];
+:local mtrversion [/system resource get version];
+
+:local rawtime [/system clock get time];
+:local time ( [:pick $rawtime 0 8] );
+
+:local mtridentity [/system identity get value-name=name ];
+#:log info $mtridentity ;
+
+:set $data "\"$mtridentity\": {\"version\": \"$mtrversion\",\"ip_address\": \"$address\",\"time\": \"$time\"}";
+
+/tool fetch mode=http url="$url" keep-result="no" http-method=post http-data="$data"  http-content-type="application/json"
