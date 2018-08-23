@@ -9,5 +9,7 @@
 # Folder script 
 [1] file.php 
 
-
+# HTTP authentication(WWW-Authenticate) with Tool fetch Mikrotik 
 <img src="https://github.com/mqnoy/mikrotik_scripting/blob/master/basic-auth-mtr.jpg"/>
+
+
