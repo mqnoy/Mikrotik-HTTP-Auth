@@ -18,3 +18,12 @@ files :
 <img src="https://github.com/mqnoy/mikrotik_scripting/blob/master/basic-auth-mtr.jpg"/>
 
 
+
+
+
+
+link reference :
+<br/>
+https://en.wikipedia.org/wiki/List_of_HTTP_status_codes
+<br/>
+https://wiki.mikrotik.com/wiki/Manual:Tools/Fetch
