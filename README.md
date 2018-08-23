@@ -12,7 +12,7 @@
 # HTTP authentication(WWW-Authenticate) with Tool fetch Mikrotik 
 files : 
 <br/>
-[1] httppost_with_toolfetch
+[1] httppost_with_toolfetch_basicauth
 <br/>
 [2] http://php.net/manual/en/features.http-auth.php
 <img src="https://github.com/mqnoy/mikrotik_scripting/blob/master/basic-auth-mtr.jpg"/>
