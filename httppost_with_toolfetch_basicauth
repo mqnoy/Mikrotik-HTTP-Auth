@@ -1,0 +1,8 @@
+#--------------------------------                                                                     
+# - created 8-23-2018 9:22 PM
+# - author : https://github.com/mqnoy/mikrotik_scripting
+# - email : qnoy.rifky@gmail.com
+#--------------------------------
+:log info "auth tester ---------------";
+:set $data "{\"var\":\"valuedone\"}";
+/tool fetch mode=http url="http://11.8.0.6/loggerv1/auth/auth.php" keep-result="yes" http-method=post http-data="$data"  http-content-type="application/json" user="thisuser" password="thispassword"
